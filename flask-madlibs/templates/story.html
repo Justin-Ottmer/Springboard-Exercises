@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlibs</title>
+</head>
+<body>
+    <h1>My "Mad" Story About {{place}}</h1>
+    {% if story == "story1" %}
+    <p> That one time in {{place}} I had the craziest day ever! I was swimming in the ocean and saw a {{noun}}
+        and it was trying to {{verb}} me! It was the {{adj}} {{noun}} I have ever seen. We became best friends
+        and drank {{drink}} all day in the sun.
+    </p>
+    {% elif story == "story2" %}
+    <p> We should go to {{place}} and look for a {{noun}}. I heard it's {{adj}}. When the {{noun}} drinks {{drink}},
+        it starts to {{verb}}.
+    </p>
+    {% else %}
+    <p> Please go back and enter story1 or story2 in story input!
+    </p>
+    {% endif %}
+</body>
+</html>
